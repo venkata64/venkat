@@ -1,0 +1,100 @@
+.final-surprise {
+  text-align: center;
+  min-height: 650px;
+}
+
+.surprise-gift {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 45px 30px;
+  border: 1px solid rgba(255, 190, 230, 0.3);
+  border-radius: 28px;
+  background: rgba(75, 35, 100, 0.5);
+  backdrop-filter: blur(15px);
+  box-sizing: border-box;
+}
+
+.gift-icon {
+  font-size: 100px;
+  animation: giftFloat 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(255, 160, 220, 0.5));
+}
+
+@keyframes giftFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+.surprise-gift h3,
+.drawing-reveal h3 {
+  color: #ffe0f2;
+  font-size: 27px;
+}
+
+.surprise-gift p,
+.drawing-intro {
+  color: #e4cce9;
+  line-height: 1.9;
+}
+
+.surprise-gift button,
+.replay-button {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #e88ab8, #9563ca);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.surprise-gift button:hover,
+.replay-button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(255, 160, 220, 0.5);
+}
+
+.drawing-reveal {
+  max-width: 850px;
+  margin: 45px auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.original-drawing {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  max-height: 650px;
+  object-fit: contain;
+  margin: 35px auto;
+  border: 2px solid rgba(255, 190, 230, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(220, 140, 255, 0.25);
+}
+
+.drawing-ending {
+  color: #f5c9e9;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.9;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .drawing-reveal {
+    padding: 15px;
+  }
+
+  .gift-icon {
+    font-size: 75px;
+  }
+}

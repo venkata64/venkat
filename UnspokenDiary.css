@@ -1,0 +1,141 @@
+.diary-section {
+  text-align: center;
+}
+
+.diary-intro {
+  max-width: 650px;
+  margin: 20px auto 40px;
+  color: #e2cce9;
+  line-height: 1.8;
+}
+
+.diary-container {
+  max-width: 700px;
+  margin: 35px auto;
+  padding: 35px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 190, 230, 0.3);
+  border-radius: 25px;
+  background: rgba(65, 30, 90, 0.55);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.diary-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.diary-heading span {
+  font-size: 30px;
+}
+
+.diary-heading h3 {
+  color: #ffe0f2;
+  font-size: 25px;
+}
+
+.diary-container textarea {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  padding: 18px;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid rgba(255, 190, 230, 0.35);
+  border-radius: 15px;
+  outline: none;
+  background: rgba(20, 10, 40, 0.65);
+  color: white;
+  font: inherit;
+  line-height: 1.8;
+}
+
+.diary-container textarea::placeholder {
+  color: #c5a9d5;
+}
+
+.diary-container textarea:focus {
+  border-color: #ed9db8;
+  box-shadow: 0 0 15px rgba(237, 157, 184, 0.2);
+}
+
+.diary-save-button {
+  margin-top: 20px;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #d879ad, #8d60c5);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.diary-save-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(237, 157, 184, 0.4);
+}
+
+.diary-entries {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.diary-entries h3 {
+  color: #ffe0f2;
+  text-align: center;
+}
+
+.empty-diary {
+  color: #d7bde5;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.diary-entry {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 190, 230, 0.2);
+  overflow-wrap: anywhere;
+}
+
+.diary-entry small {
+  color: #d9b9e8;
+}
+
+.diary-entry p {
+  color: #fff0f8;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.diary-delete-button {
+  border: none;
+  background: transparent;
+  color: #ffabc9;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.diary-ending {
+  color: #f3c9e8;
+  font-style: italic;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .diary-container {
+    padding: 20px;
+  }
+
+  .diary-heading h3 {
+    font-size: 20px;
+  }
+}
